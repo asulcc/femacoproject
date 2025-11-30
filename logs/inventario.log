@@ -1,0 +1,82 @@
+[2025-11-29 16:49:32] INFO - Logger inicializado - Sistema FEMACO Inventario
+[2025-11-29 16:49:32] INFO - Look and Feel configurado correctamente
+[2025-11-29 16:49:32] INFO - Iniciando Sistema de Gestión de Inventario FEMACO v1.0
+[2025-11-29 16:49:32] INFO - Inicializando base de datos...
+[2025-11-29 16:49:32] ERROR - Error crítico al inicializar la base de datos - No suitable driver found for jdbc:sqlite:inventario_femaco.db
+[2025-11-29 16:50:38] INFO - Logger inicializado - Sistema FEMACO Inventario
+[2025-11-29 16:50:38] INFO - Look and Feel configurado correctamente
+[2025-11-29 16:50:38] INFO - Iniciando Sistema de Gestión de Inventario FEMACO v1.0
+[2025-11-29 16:50:38] INFO - Inicializando base de datos...
+[2025-11-29 16:50:38] ERROR - Error crítico al inicializar la base de datos - No suitable driver found for jdbc:sqlite:inventario_femaco.db
+[2025-11-29 17:00:54] INFO - Logger inicializado - Sistema FEMACO Inventario
+[2025-11-29 17:00:55] INFO - Look and Feel configurado correctamente
+[2025-11-29 17:00:55] INFO - Iniciando Sistema de Gestión de Inventario FEMACO v1.0
+[2025-11-29 17:00:55] INFO - Inicializando base de datos...
+[2025-11-29 17:00:55] INFO - Base de datos inicializada correctamente
+[2025-11-29 17:00:55] INFO - Creando interfaz gráfica principal...
+[2025-11-29 17:00:55] INFO - Cargados 0 productos en árbol binario
+[2025-11-29 17:03:17] WARN - Intento de autenticación fallido - Usuario no encontrado: admin
+[2025-11-29 17:03:46] WARN - Intento de autenticación fallido - Usuario no encontrado: administrador
+[2025-11-29 17:11:22] INFO - Logger inicializado - Sistema FEMACO Inventario
+[2025-11-29 17:11:22] INFO - Look and Feel configurado correctamente
+[2025-11-29 17:11:22] INFO - Iniciando Sistema de Gestión de Inventario FEMACO v1.0
+[2025-11-29 17:11:22] INFO - Inicializando base de datos...
+[2025-11-29 17:11:22] INFO - Base de datos inicializada correctamente
+[2025-11-29 17:11:22] INFO - Creando interfaz gráfica principal...
+[2025-11-29 17:11:22] INFO - Cargados 0 productos en árbol binario
+[2025-11-29 17:20:19] INFO - Logger inicializado - Sistema FEMACO Inventario
+[2025-11-29 17:20:19] INFO - Look and Feel configurado correctamente
+[2025-11-29 17:20:19] INFO - Iniciando Sistema de Gestión de Inventario FEMACO v1.0
+[2025-11-29 17:20:19] INFO - Inicializando base de datos...
+[2025-11-29 17:20:19] INFO - Base de datos inicializada correctamente
+[2025-11-29 17:20:19] INFO - Creando interfaz gráfica principal...
+[2025-11-29 17:20:19] INFO - Cargados 0 productos en árbol binario
+[2025-11-29 17:20:57] INFO - Logger inicializado - Sistema FEMACO Inventario
+[2025-11-29 17:20:57] INFO - Look and Feel configurado correctamente
+[2025-11-29 17:20:57] INFO - Iniciando Sistema de Gestión de Inventario FEMACO v1.0
+[2025-11-29 17:20:57] INFO - Inicializando base de datos...
+[2025-11-29 17:20:58] INFO - Base de datos inicializada correctamente
+[2025-11-29 17:20:58] INFO - Creando interfaz gráfica principal...
+[2025-11-29 17:20:58] INFO - Cargados 0 productos en árbol binario
+[2025-11-29 17:28:42] INFO - Logger inicializado - Sistema FEMACO Inventario
+[2025-11-29 17:28:42] INFO - Look and Feel configurado correctamente
+[2025-11-29 17:28:42] INFO - Iniciando Sistema de Gestión de Inventario FEMACO v1.0
+[2025-11-29 17:28:42] INFO - Inicializando base de datos...
+[2025-11-29 17:28:42] INFO - Base de datos inicializada correctamente
+[2025-11-29 17:28:42] INFO - Creando interfaz gráfica principal...
+[2025-11-29 17:28:42] INFO - Cargados 0 productos en árbol binario
+[2025-11-29 17:28:54] WARN - Intento de autenticación fallido - Usuario no encontrado: administrador
+[2025-11-29 17:29:19] WARN - Intento de autenticación fallido - Usuario no encontrado: administrador
+[2025-11-29 17:34:31] INFO - Logger inicializado - Sistema FEMACO Inventario
+[2025-11-29 17:34:31] INFO - Look and Feel configurado correctamente
+[2025-11-29 17:34:31] INFO - Iniciando Sistema de Gestión de Inventario FEMACO v1.0
+[2025-11-29 17:34:31] INFO - Inicializando base de datos...
+[2025-11-29 17:34:31] INFO - Base de datos inicializada correctamente
+[2025-11-29 17:34:31] INFO - Creando interfaz gráfica principal...
+[2025-11-29 17:34:31] INFO - Cargados 0 productos en árbol binario
+[2025-11-29 17:34:48] WARN - Intento de autenticación fallido - Password incorrecto: admin
+[2025-11-29 17:35:46] ERROR - Error durante autenticación: admin - Illegal base64 character 24
+[2025-11-29 17:51:32] ERROR - Error durante autenticación: admin - Illegal base64 character 24
+[2025-11-29 17:51:43] ERROR - Error durante autenticación: admin - Illegal base64 character 24
+[2025-11-29 17:51:48] ERROR - Error durante autenticación: admin - Illegal base64 character 24
+[2025-11-29 17:51:53] ERROR - Error durante autenticación: admin - Illegal base64 character 24
+[2025-11-29 17:52:00] WARN - Intento de autenticación fallido - Usuario no encontrado: ADMIN
+[2025-11-29 17:52:09] WARN - Intento de autenticación fallido - Usuario no encontrado: ADMIN
+[2025-11-29 17:52:25] ERROR - Error durante autenticación: almacenero - Illegal base64 character 24
+[2025-11-29 17:52:32] ERROR - Error durante autenticación: almacenero - Illegal base64 character 24
+[2025-11-29 17:53:00] WARN - Intento de autenticación fallido - Usuario no encontrado: admin@femaco.com
+[2025-11-29 17:53:12] ERROR - Error durante autenticación: admin - Illegal base64 character 24
+[2025-11-29 17:58:38] INFO - Usuario autenticado exitosamente: admin - Rol: ADMINISTRADOR
+[2025-11-29 17:58:39] INFO - Generando reporte de valor total del inventario
+[2025-11-29 17:58:39] ERROR - Error al crear la interfaz gráfica principal - Cannot invoke "javax.swing.JTextField.setBorder(javax.swing.border.Border)" because "this.textField" is null
+[2025-11-29 22:57:08] INFO - Logger inicializado - Sistema FEMACO Inventario
+[2025-11-29 22:57:08] INFO - Look and Feel configurado correctamente
+[2025-11-29 22:57:08] INFO - Iniciando Sistema de Gestión de Inventario FEMACO v1.0
+[2025-11-29 22:57:08] INFO - Inicializando base de datos...
+[2025-11-29 22:57:09] INFO - Base de datos inicializada correctamente
+[2025-11-29 22:57:09] INFO - Creando interfaz gráfica principal...
+[2025-11-29 22:57:09] INFO - Cargados 0 productos en árbol binario
+[2025-11-29 22:57:24] INFO - Usuario autenticado exitosamente: admin - Rol: ADMINISTRADOR
+[2025-11-29 22:57:24] INFO - Usuario autenticado exitosamente: admin - Rol: ADMINISTRADOR
+[2025-11-29 22:57:25] INFO - Generando reporte de valor total del inventario
+[2025-11-29 22:57:25] ERROR - Error al crear la interfaz gráfica principal - Cannot invoke "javax.swing.JTextField.setBorder(javax.swing.border.Border)" because "this.textField" is null
