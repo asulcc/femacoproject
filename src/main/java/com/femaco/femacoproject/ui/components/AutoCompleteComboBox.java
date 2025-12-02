@@ -2,7 +2,6 @@ package com.femaco.femacoproject.ui.components;
 
 import javax.swing.*;
 import javax.swing.plaf.basic.BasicComboBoxEditor;
-import java.awt.*;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.util.ArrayList;
@@ -105,27 +104,34 @@ public class AutoCompleteComboBox extends JComboBox<String> {
         
         public AutoCompleteEditor() {
             super();
+            // Obtener la referencia al textField
             textField = (JTextField) getEditorComponent();
-            textField.setBorder(BorderFactory.createEmptyBorder(2, 5, 2, 5));
-        }
-        
-        @Override
-        public void setItem(Object item) {
-            if (item != null) {
-                textField.setText(item.toString());
-            } else {
-                textField.setText("");
-            }
-        }
-        
-        @Override
-        public Object getItem() {
-            return textField.getText();
         }
         
         @Override
         public JTextField getEditorComponent() {
+            if (textField == null) {
+                textField = (JTextField) super.getEditorComponent();
+                if (textField != null) {
+                    // Configurar border SOLO cuando textField no es null
+                    textField.setBorder(BorderFactory.createEmptyBorder(2, 5, 2, 5));
+                }
+            }
             return textField;
+        }
+
+        @Override
+        public void setItem(Object item) {
+            // Asegurar que textField esté inicializado
+            getEditorComponent();
+            if (textField != null) {
+                textField.setText(item != null ? item.toString() : "");
+            }
+        }
+
+        @Override
+        public Object getItem() {
+            return textField != null ? textField.getText() : "";
         }
     }
 }

@@ -31,7 +31,8 @@ public class ProductoPanel extends JPanel {
     private JSpinner spnStockMinimo;
     private JSpinner spnPrecio;
     private JTextField txtUbicacion;
-    private AutoCompleteComboBox cmbProveedor;
+//    private AutoCompleteComboBox cmbProveedor;
+    private JComboBox<String> cmbProveedor;
     
     private CustomButton btnNuevo;
     private CustomButton btnGuardar;
@@ -168,7 +169,8 @@ public class ProductoPanel extends JPanel {
         
         // Proveedor
         panel.add(new JLabel("Proveedor:"));
-        cmbProveedor = new AutoCompleteComboBox();
+//        cmbProveedor = new AutoCompleteComboBox();
+        cmbProveedor = new JComboBox<String>();
         panel.add(cmbProveedor);
         
         return panel;
@@ -211,6 +213,7 @@ public class ProductoPanel extends JPanel {
             
             // Cargar proveedores para el combobox
             List<Proveedor> proveedores = inventarioService.listarProveedores();
+            cmbProveedor.removeAllItems();
             for (Proveedor prov : proveedores) {
                 cmbProveedor.addItem(prov.getId() + " - " + prov.getNombre());
             }

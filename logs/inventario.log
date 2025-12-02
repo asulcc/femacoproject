@@ -80,3 +80,35 @@
 [2025-11-29 22:57:24] INFO - Usuario autenticado exitosamente: admin - Rol: ADMINISTRADOR
 [2025-11-29 22:57:25] INFO - Generando reporte de valor total del inventario
 [2025-11-29 22:57:25] ERROR - Error al crear la interfaz gráfica principal - Cannot invoke "javax.swing.JTextField.setBorder(javax.swing.border.Border)" because "this.textField" is null
+[2025-12-01 07:36:19] INFO - Logger inicializado - Sistema FEMACO Inventario
+[2025-12-01 07:36:19] INFO - Look and Feel configurado correctamente
+[2025-12-01 07:36:19] INFO - Iniciando Sistema de Gestión de Inventario FEMACO v1.0
+[2025-12-01 07:36:19] INFO - Inicializando base de datos...
+[2025-12-01 07:36:19] INFO - Base de datos inicializada correctamente
+[2025-12-01 07:36:19] INFO - Creando interfaz gráfica principal...
+[2025-12-01 07:36:19] INFO - Cargados 0 productos en árbol binario
+[2025-12-01 07:36:29] INFO - Usuario autenticado exitosamente: admin - Rol: ADMINISTRADOR
+[2025-12-01 07:36:29] INFO - Usuario autenticado exitosamente: admin - Rol: ADMINISTRADOR
+[2025-12-01 07:36:30] INFO - Generando reporte de valor total del inventario
+[2025-12-01 07:36:30] ERROR - Error al crear la interfaz gráfica principal - Cannot invoke "javax.swing.JTextField.setBorder(javax.swing.border.Border)" because "this.textField" is null
+[2025-12-01 21:31:51] INFO - Logger inicializado - Sistema FEMACO Inventario
+[2025-12-01 21:31:51] INFO - Look and Feel configurado correctamente
+[2025-12-01 21:31:51] INFO - Iniciando Sistema de Gestión de Inventario FEMACO v1.0
+[2025-12-01 21:31:51] INFO - Inicializando base de datos...
+[2025-12-01 21:31:52] INFO - Base de datos inicializada correctamente
+[2025-12-01 21:31:52] INFO - Creando interfaz gráfica principal...
+[2025-12-01 21:31:52] INFO - Cargados 0 productos en árbol binario
+[2025-12-01 21:31:59] INFO - Usuario autenticado exitosamente: admin - Rol: ADMINISTRADOR
+[2025-12-01 21:31:59] INFO - Usuario autenticado exitosamente: admin - Rol: ADMINISTRADOR
+[2025-12-01 21:32:00] INFO - Generando reporte de valor total del inventario
+[2025-12-01 21:47:50] INFO - Interfaz gráfica creada correctamente
+[2025-12-01 21:48:15] INFO - Generando reporte de valor total del inventario
+[2025-12-01 21:48:19] INFO - Generando reporte de stock actual
+[2025-12-01 21:48:19] INFO - Generando reporte de stock bajo
+[2025-12-01 21:48:19] INFO - Generando reporte de stock crítico
+[2025-12-01 21:48:45] INFO - Generando reporte de valor total del inventario
+[2025-12-01 21:49:15] INFO - Generando reporte de valor total del inventario
+[2025-12-01 21:49:35] INFO - Sesión cerrada para usuario: ADM001
+[2025-12-01 21:49:37] INFO - Cerrando aplicación...
+[2025-12-01 21:49:37] INFO - Realizando tareas de limpieza...
+[2025-12-01 21:49:37] INFO - Logger cerrado
