@@ -117,9 +117,7 @@ public class ProductoTableModel extends AbstractTableModel {
         return new ArrayList<>(productos);
     }
     
-    /**
-     * Filtra los productos por estado
-     */
+    // Filtra los productos por estado
     public void filtrarPorEstado(EstadoProducto estado) {
         List<Producto> filtrados = new ArrayList<>();
         for (Producto producto : this.productos) {
@@ -130,9 +128,7 @@ public class ProductoTableModel extends AbstractTableModel {
         setProductos(filtrados);
     }
     
-    /**
-     * Busca productos que contengan el texto en nombre o ID
-     */
+    // Busca productos que contengan el texto en nombre o ID
     public void buscar(String texto) {
         if (texto == null || texto.trim().isEmpty()) {
             return;

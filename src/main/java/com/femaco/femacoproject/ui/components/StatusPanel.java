@@ -80,7 +80,7 @@ public class StatusPanel extends JPanel {
     
     public void setColor(Color color) {
         valueLabel.setForeground(color);
-        // Puedes agregar un icono con el color si lo deseas
+        // Se puede agregar un icono con el color si se desea
     }
     
     public void setIcon(Icon icon) {
@@ -120,9 +120,7 @@ public class StatusPanel extends JPanel {
         return new StatusPanel(title, value, subtitle, new Color(0, 102, 204));
     }
     
-    /**
-     * Actualiza el valor con formato numérico
-     */
+    // Actualiza el valor con formato numérico
     public void setValue(int value) {
         setValue(String.valueOf(value));
     }
@@ -131,9 +129,7 @@ public class StatusPanel extends JPanel {
         setValue(String.format("%.2f", value));
     }
     
-    /**
-     * Agrega un tooltip a todo el panel
-     */
+    // Agrega un tooltip a todo el panel
     public void setToolTip(String tooltip) {
         setToolTipText(tooltip);
         titleLabel.setToolTipText(tooltip);

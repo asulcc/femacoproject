@@ -111,9 +111,7 @@ public class StockProgressBar extends JProgressBar {
         repaint();
     }
     
-    /**
-     * Obtiene el estado del stock como texto
-     */
+   // Obtiene el estado del stock como texto
     public String getEstadoStock() {
         if (stockActual == 0) {
             return "CRÍTICO";
@@ -126,31 +124,23 @@ public class StockProgressBar extends JProgressBar {
         }
     }
     
-    /**
-     * Verifica si el stock está en nivel crítico
-     */
+   // Verifica si el stock está en nivel crítico
     public boolean isStockCritico() {
         return stockActual == 0;
     }
     
-    /**
-     * Verifica si el stock está bajo el mínimo
-     */
+   // Verifica si el stock está bajo el mínimo
     public boolean isStockBajo() {
         return stockActual > 0 && stockActual <= stockMinimo;
     }
     
-    /**
-     * Obtiene el porcentaje de stock respecto al máximo
-     */
+   // Obtiene el porcentaje de stock respecto al máximo
     public double getPorcentajeStock() {
         if (stockMaximo <= 0) return 0;
         return (double) stockActual / stockMaximo * 100;
     }
     
-    /**
-     * Obtiene el porcentaje de stock respecto al mínimo
-     */
+   // Obtiene el porcentaje de stock respecto al mínimo
     public double getPorcentajeSobreMinimo() {
         if (stockMinimo <= 0) return Double.POSITIVE_INFINITY;
         return (double) stockActual / stockMinimo * 100;

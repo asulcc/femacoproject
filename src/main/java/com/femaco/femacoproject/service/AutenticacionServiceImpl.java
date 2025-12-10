@@ -202,7 +202,7 @@ public class AutenticacionServiceImpl implements AutenticacionService {
             if (exito) {
                 logger.info("Password reseteado para usuario: " + usuarioId + " - Password temporal: " + 
                            SecurityUtil.maskSensitiveData(passwordTemporal));
-                // En producción, aquí se enviaría el password temporal por email
+                // En el futuro, aquí se enviaría el password temporal por email
             }
             return exito;
         } catch (UsuarioNoAutorizadoException e) {

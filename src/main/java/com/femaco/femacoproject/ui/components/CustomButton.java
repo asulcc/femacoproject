@@ -31,8 +31,7 @@ public class CustomButton extends JButton {
     }
     
     private void initDefaults() {
-        // Colores por defecto - tema FEMACO (azul corporativo)
-        this.backgroundColor = new Color(0, 102, 204); // Azul FEMACO
+        this.backgroundColor = new Color(0, 102, 204); // Azul
         this.hoverColor = new Color(0, 122, 255);
         this.pressedColor = new Color(0, 82, 164);
         this.textColor = Color.WHITE;

@@ -112,9 +112,7 @@ public class MovimientoTableModel extends AbstractTableModel {
         return new ArrayList<>(movimientos);
     }
     
-    /**
-     * Filtra movimientos por tipo
-     */
+    // Filtra movimientos por tipo
     public void filtrarPorTipo(TipoMovimiento tipo) {
         List<MovimientoInventario> filtrados = new ArrayList<>();
         for (MovimientoInventario movimiento : this.movimientos) {
@@ -125,9 +123,7 @@ public class MovimientoTableModel extends AbstractTableModel {
         setMovimientos(filtrados);
     }
     
-    /**
-     * Filtra movimientos por producto
-     */
+    // Filtra movimientos por producto
     public void filtrarPorProducto(String productoId) {
         List<MovimientoInventario> filtrados = new ArrayList<>();
         for (MovimientoInventario movimiento : this.movimientos) {

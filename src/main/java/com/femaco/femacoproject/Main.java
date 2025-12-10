@@ -20,10 +20,6 @@ public class Main {
     private static final Logger logger = Logger.getInstance();
     private static final Configuracion configuracion = Configuracion.getInstance();
     
-    /**
-     * Método principal - Punto de entrada de la aplicación
-     * @param args Argumentos de línea de comandos
-     */
     public static void main(String[] args) {
         // Configurar el Look and Feel del sistema
         configurarLookAndFeel();
@@ -44,9 +40,6 @@ public class Main {
         });
     }
     
-    /**
-     * Configura el Look and Feel de la aplicación para que coincida con el sistema operativo
-     */
     private static void configurarLookAndFeel() {
         try {
             // Usar el Look and Feel del sistema
@@ -62,9 +55,7 @@ public class Main {
         }
     }
     
-    /**
-     * Configuraciones específicas de la interfaz de usuario
-     */
+    // Configuraciones específicas de la interfaz de usuario
     private static void configurarUI() {
         try {
             // Configurar fuentes y colores por defecto
@@ -86,36 +77,33 @@ public class Main {
         }
     }
     
-    /**
-     * Muestra información de inicio de la aplicación
-     */
+    // Muestra información de inicio de la aplicación
     private static void mostrarInformacionInicio() {
         String mensajeInicio = 
-            "╔══════════════════════════════════════════════════════════════╗\n" +
+            "╔═════════════════════════════════════════════════════════════╗\n" +
             "║               SISTEMA DE GESTIÓN DE INVENTARIO              ║\n" +
             "║                     FEMACO S.R.L.                           ║\n" +
-            "║                                                              ║\n" +
+            "║                                                             ║\n" +
+            "║  Elaborado por: Grupo 4                                     ║\n" +
             "║  Versión: 1.0                                               ║\n" +
             "║  Desarrollado para: Ferretería FEMACO                       ║\n" +
             "║  Tecnologías: Java SE 17+, SQLite, Swing                    ║\n" +
-            "║  Fecha: 2024                                                ║\n" +
-            "║                                                              ║\n" +
-            "║  Características:                                            ║\n" +
+            "║  Fecha: 2025                                                ║\n" +
+            "║                                                             ║\n" +
+            "║  Características:                                           ║\n" +
             "║  • Gestión de productos de alta rotación                    ║\n" +
             "║  • Control de stock en tiempo real                          ║\n" +
             "║  • Alertas automáticas de stock mínimo                      ║\n" +
             "║  • Reportes y estadísticas                                  ║\n" +
             "║  • Múltiples roles de usuario                               ║\n" +
             "║  • Backup automático de datos                               ║\n" +
-            "╚══════════════════════════════════════════════════════════════╝";
+            "╚═════════════════════════════════════════════════════════════╝";
         
         System.out.println(mensajeInicio);
         logger.info("Iniciando Sistema de Gestión de Inventario FEMACO v1.0");
     }
     
-    /**
-     * Inicializa la base de datos y realiza verificaciones
-     */
+    // Inicializa la base de datos y realiza verificaciones
     private static void inicializarBaseDatos() {
         try {
             logger.info("Inicializando base de datos...");
@@ -133,9 +121,7 @@ public class Main {
         }
     }
     
-    /**
-     * Crea y muestra la interfaz gráfica principal
-     */
+    // Crea y muestra la interfaz gráfica principal
     private static void crearYMostrarGUI() {
         try {
             logger.info("Creando interfaz gráfica principal...");
@@ -153,9 +139,7 @@ public class Main {
         }
     }
     
-    /**
-     * Configura el cierre seguro de la aplicación
-     */
+    // Configura el cierre seguro de la aplicación
     private static void configurarCierreSeguro(MainFrame mainFrame) {
         Runtime.getRuntime().addShutdownHook(new Thread(() -> {
             logger.info("Cerrando aplicación...");
@@ -163,9 +147,7 @@ public class Main {
         }));
     }
     
-    /**
-     * Realiza tareas de limpieza antes de cerrar la aplicación
-     */
+    // Realiza tareas de limpieza antes de cerrar la aplicación
     private static void realizarLimpieza() {
         try {
             logger.info("Realizando tareas de limpieza...");
@@ -185,9 +167,7 @@ public class Main {
         }
     }
     
-    /**
-     * Realiza backup automático de la base de datos
-     */
+    // Realiza backup automático de la base de datos
     private static void realizarBackupAutomatico() {
         try {
             DatabaseConnection dbConnection = DatabaseConnection.getInstance();
@@ -204,9 +184,7 @@ public class Main {
         }
     }
     
-    /**
-     * Maneja errores fatales mostrando un mensaje al usuario y registrando el error
-     */
+    // Maneja errores fatales mostrando un mensaje al usuario y registrando el error
     private static void manejarErrorFatal(String mensaje, Exception e) {
         // Registrar el error
         logger.error(mensaje, e);
@@ -218,9 +196,7 @@ public class Main {
         System.exit(1);
     }
     
-    /**
-     * Muestra un diálogo de error al usuario
-     */
+    // Muestra un diálogo de error al usuario
     private static void mostrarErrorDialog(String titulo, String mensaje) {
         try {
             // Asegurarse de que se ejecute en el EDT
@@ -235,9 +211,7 @@ public class Main {
         }
     }
     
-    /**
-     * Muestra el diálogo de error (debe ejecutarse en el EDT)
-     */
+    // Muestra el diálogo de error (debe ejecutarse en el EDT)
     private static void mostrarDialogoError(String titulo, String mensaje) {
         JOptionPane.showMessageDialog(
             null,
@@ -251,10 +225,7 @@ public class Main {
         );
     }
     
-    /**
-     * Método para verificar el estado del sistema
-     * @return true si el sistema está listo para funcionar
-     */
+    // Método para verificar el estado del sistema
     public static boolean verificarSistema() {
         try {
             // Verificar versión de Java
@@ -279,9 +250,7 @@ public class Main {
         }
     }
     
-    /**
-     * Verifica permisos de escritura en el directorio actual
-     */
+    // Verifica permisos de escritura en el directorio actual
     private static boolean verificarPermisosEscritura() {
         try {
             java.nio.file.Path tempFile = java.nio.file.Files.createTempFile("femaco_test", ".tmp");
@@ -292,9 +261,7 @@ public class Main {
         }
     }
     
-    /**
-     * Método para obtener información del sistema
-     */
+    // Método para obtener información del sistema
     public static String obtenerInfoSistema() {
         return String.format(
             "Sistema de Gestión de Inventario FEMACO v1.0\n" +

@@ -1,18 +1,12 @@
 package com.femaco.femacoproject.exception;
 
-/**
- * Excepción lanzada cuando un usuario no tiene permisos para realizar una operación.
- * Se utiliza en validaciones de seguridad y control de acceso.
- */
 public class UsuarioNoAutorizadoException extends InventarioException {
     private final String usuarioId;
     private final String operacion;
     private final String recurso;
     private final String rolRequerido;
     
-    /**
-     * Constructor básico para operación no autorizada.
-     */
+    // Constructor básico para operación no autorizada.
     public UsuarioNoAutorizadoException(String usuarioId, String operacion) {
         super(crearMensaje(usuarioId, operacion),
               "USUARIO_NO_AUTORIZADO", 
@@ -24,9 +18,7 @@ public class UsuarioNoAutorizadoException extends InventarioException {
         this.rolRequerido = "DESCONOCIDO";
     }
     
-    /**
-     * Constructor con recurso específico.
-     */
+    // Constructor con recurso específico.
     public UsuarioNoAutorizadoException(String usuarioId, String operacion, String recurso) {
         super(crearMensajeDetallado(usuarioId, operacion, recurso),
               "USUARIO_NO_AUTORIZADO", 
@@ -38,9 +30,7 @@ public class UsuarioNoAutorizadoException extends InventarioException {
         this.rolRequerido = "DESCONOCIDO";
     }
     
-    /**
-     * Constructor con rol requerido.
-     */
+    // Constructor con rol requerido.
     public UsuarioNoAutorizadoException(String usuarioId, String operacion, String recurso, String rolRequerido) {
         super(crearMensajeConRol(usuarioId, operacion, recurso, rolRequerido),
               "USUARIO_NO_AUTORIZADO", 
@@ -52,9 +42,7 @@ public class UsuarioNoAutorizadoException extends InventarioException {
         this.rolRequerido = rolRequerido;
     }
     
-    /**
-     * Constructor para autenticación fallida.
-     */
+    // Constructor para autenticación fallida.
     public UsuarioNoAutorizadoException(String mensaje) {
         super(mensaje, "USUARIO_NO_AUTORIZADO", "AUTENTICACION", "VALIDAR_CREDENCIALES");
         this.usuarioId = "DESCONOCIDO";
@@ -63,9 +51,7 @@ public class UsuarioNoAutorizadoException extends InventarioException {
         this.rolRequerido = "DESCONOCIDO";
     }
     
-    /**
-     * Constructor con causa.
-     */
+    // Constructor con causa.
     public UsuarioNoAutorizadoException(String mensaje, Throwable causa) {
         super(mensaje, "USUARIO_NO_AUTORIZADO", "SEGURIDAD", "VALIDAR_PERMISOS", causa);
         this.usuarioId = "DESCONOCIDO";
@@ -104,16 +90,12 @@ public class UsuarioNoAutorizadoException extends InventarioException {
         return rolRequerido;
     }
     
-    /**
-     * Indica si es un error de autenticación.
-     */
+    // Indica si es un error de autenticación.
     public boolean esErrorAutenticacion() {
         return "AUTENTICACION".equals(getModulo());
     }
     
-    /**
-     * Indica si es un error de autorización.
-     */
+    // Indica si es un error de autorización.
     public boolean esErrorAutorizacion() {
         return "SEGURIDAD".equals(getModulo());
     }

@@ -36,7 +36,7 @@ public class Producto implements Comparable<Producto> {
         actualizarEstado();
     }
     
-    // Constructor mínimo
+    // Constructor simplificado
     public Producto(String id, String nombre, CategoriaProducto categoria, 
                    int stockMinimo, double precio, String ubicacion) {
         this(id, nombre, categoria, 0, stockMinimo, precio, ubicacion, null);

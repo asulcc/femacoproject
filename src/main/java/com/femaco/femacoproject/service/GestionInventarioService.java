@@ -15,156 +15,100 @@ import java.util.Date;
 public interface GestionInventarioService {
     // ===== GESTIÓN DE PRODUCTOS =====
     
-    /**
-     * Registrar un nuevo producto en el inventario
-     */
+    // Registrar un nuevo producto en el inventario
     boolean registrarProducto(Producto producto);
     
-    /**
-     * Actualizar información de un producto existente
-     */
+    // Actualizar información de un producto existente
     boolean actualizarProducto(Producto producto) throws ProductoNoEncontradoException;
     
-    /**
-     * Eliminar un producto del inventario (eliminación lógica)
-     */
+    // Eliminar un producto del inventario (eliminación lógica)
     boolean eliminarProducto(String id) throws ProductoNoEncontradoException;
     
-    /**
-     * Buscar producto por ID
-     */
+    // Buscar producto por ID
     Producto buscarProducto(String id) throws ProductoNoEncontradoException;
     
-    /**
-     * Obtener todos los productos
-     */
+    // Obtener todos los productos
     List<Producto> listarProductos();
     
-    /**
-     * Buscar productos por nombre (búsqueda parcial)
-     */
+    // Buscar productos por nombre (búsqueda parcial)
     List<Producto> buscarProductosPorNombre(String nombre);
     
-    /**
-     * Buscar productos por categoría
-     */
+    // Buscar productos por categoría
     List<Producto> buscarProductosPorCategoria(CategoriaProducto categoria);
     
-    /**
-     * Buscar productos por estado
-     */
+    // Buscar productos por estado
     List<Producto> buscarProductosPorEstado(EstadoProducto estado);
     
-    /**
-     * Obtener productos con stock bajo (stock <= stock mínimo)
-     */
+    // Obtener productos con stock bajo (stock <= stock mínimo)
     List<Producto> obtenerProductosStockBajo();
     
-    /**
-     * Obtener productos con stock crítico (stock = 0)
-     */
+    // Obtener productos con stock crítico (stock = 0)
     List<Producto> obtenerProductosStockCritico();
     
     // ===== MOVIMIENTOS DE INVENTARIO =====
     
-    /**
-     * Registrar entrada de stock (compra, devolución, etc.)
-     */
+    // Registrar entrada de stock (compra, devolución, etc.)
     boolean registrarEntrada(String productoId, int cantidad, String motivo, 
                            String usuarioId, String referencia) throws ProductoNoEncontradoException;
     
-    /**
-     * Registrar salida de stock (venta, consumo, etc.)
-     */
+    // Registrar salida de stock (venta, consumo, etc.)
     boolean registrarSalida(String productoId, int cantidad, String motivo, 
                           String usuarioId, String referencia) 
                           throws StockInsuficienteException, ProductoNoEncontradoException;
     
-    /**
-     * Registrar ajuste de inventario (corrección de stock)
-     */
+    // Registrar ajuste de inventario (corrección de stock)
     boolean registrarAjuste(String productoId, int nuevoStock, String motivo, 
                           String usuarioId) throws ProductoNoEncontradoException;
     
     // ===== CONSULTAS DE INVENTARIO =====
     
-    /**
-     * Obtener stock actual de un producto
-     */
+    // Obtener stock actual de un producto
     int obtenerStockActual(String productoId) throws ProductoNoEncontradoException;
     
-    /**
-     * Verificar si hay stock suficiente para una salida
-     */
+    // Verificar si hay stock suficiente para una salida
     boolean verificarStockSuficiente(String productoId, int cantidadRequerida) 
                                    throws ProductoNoEncontradoException;
     
-    /**
-     * Obtener historial de movimientos de un producto
-     */
+    // Obtener historial de movimientos de un producto
     List<MovimientoInventario> obtenerHistorialProducto(String productoId);
     
-    /**
-     * Obtener todos los movimientos en un rango de fechas
-     */
+    // Obtener todos los movimientos en un rango de fechas
     List<MovimientoInventario> obtenerMovimientosPorFecha(Date fechaInicio, Date fechaFin);
     
-    /**
-     * Obtener movimientos recientes (últimos 30 días)
-     */
+    // Obtener movimientos recientes (últimos 30 días)
     List<MovimientoInventario> obtenerMovimientosRecientes();
     
     // ===== GESTIÓN DE PROVEEDORES =====
     
-    /**
-     * Registrar nuevo proveedor
-     */
+    // Registrar nuevo proveedor
     boolean registrarProveedor(Proveedor proveedor);
     
-    /**
-     * Actualizar información de proveedor
-     */
+    // Actualizar información de proveedor
     boolean actualizarProveedor(Proveedor proveedor) throws ProveedorNoEncontradoException;
     
-    /**
-     * Desactivar proveedor
-     */
+    // Desactivar proveedor
     boolean desactivarProveedor(String id) throws ProveedorNoEncontradoException;
     
-    /**
-     * Buscar proveedor por ID
-     */
+    // Buscar proveedor por ID
     Proveedor buscarProveedor(String id) throws ProveedorNoEncontradoException;
     
-    /**
-     * Listar todos los proveedores activos
-     */
+    // Listar todos los proveedores activos
     List<Proveedor> listarProveedoresActivos();
     
-    /**
-     * Listar todos los proveedores
-     */
+    // Listar todos los proveedores
     List<Proveedor> listarProveedores();
     
     // ===== MÉTRICAS Y ESTADÍSTICAS =====
     
-    /**
-     * Obtener valor total del inventario
-     */
+    // Obtener valor total del inventario
     double calcularValorTotalInventario();
     
-    /**
-     * Obtener cantidad total de productos
-     */
+    // Obtener cantidad total de productos
     int obtenerTotalProductos();
     
-    /**
-     * Obtener cantidad de productos por categoría
-     */
+    // Obtener cantidad de productos por categoría
     int contarProductosPorCategoria(CategoriaProducto categoria);
     
-    /**
-     * Obtener productos más movidos (entradas + salidas)
-     */
+    // Obtener productos más movidos (entradas + salidas)
     List<Producto> obtenerProductosMasMovidos(int limite);
 }

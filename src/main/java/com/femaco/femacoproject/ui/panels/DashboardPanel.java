@@ -200,7 +200,7 @@ public class DashboardPanel extends JPanel {
         
         for (int i = 0; i < Math.min(movimientos.size(), 10); i++) {
             MovimientoInventario m = movimientos.get(i);
-            data[i][0] = m.getProductoId(); // En producción, buscar nombre del producto
+            data[i][0] = m.getProductoId();
             data[i][1] = m.getTipo().getDescripcion();
             data[i][2] = m.getCantidad();
             data[i][3] = new java.text.SimpleDateFormat("dd/MM/yyyy HH:mm").format(m.getFecha());

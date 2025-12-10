@@ -3,17 +3,11 @@ package com.femaco.femacoproject.exception;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Excepción lanzada cuando falla la validación de datos.
- * Puede contener múltiples errores de validación.
- */
 public class ValidacionException extends InventarioException {
     private final List<String> erroresValidacion;
     private final String entidad;
     
-    /**
-     * Constructor con lista de errores.
-     */
+    // Constructor con lista de errores.
     public ValidacionException(String entidad, List<String> errores) {
         super(crearMensaje(entidad, errores),
               "VALIDACION_FALLIDA", 
@@ -23,9 +17,7 @@ public class ValidacionException extends InventarioException {
         this.erroresValidacion = new ArrayList<>(errores);
     }
     
-    /**
-     * Constructor con un solo error.
-     */
+    // Constructor con un solo error.
     public ValidacionException(String entidad, String error) {
         super(crearMensaje(entidad, List.of(error)),
               "VALIDACION_FALLIDA", 
@@ -36,9 +28,7 @@ public class ValidacionException extends InventarioException {
         this.erroresValidacion.add(error);
     }
     
-    /**
-     * Constructor con causa.
-     */
+    // Constructor con causa.
     public ValidacionException(String mensaje, Throwable causa) {
         super(mensaje, "VALIDACION_FALLIDA", "VALIDACION", "VALIDAR_DATOS", causa);
         this.entidad = "DESCONOCIDA";
@@ -68,30 +58,22 @@ public class ValidacionException extends InventarioException {
         return entidad;
     }
     
-    /**
-     * Obtiene la cantidad de errores de validación.
-     */
+    // Obtiene la cantidad de errores de validación.
     public int getCantidadErrores() {
         return erroresValidacion.size();
     }
     
-    /**
-     * Agrega un error a la lista de errores.
-     */
+    // Agrega un error a la lista de errores.
     public void agregarError(String error) {
         erroresValidacion.add(error);
     }
     
-    /**
-     * Indica si hay errores de validación.
-     */
+    // Indica si hay errores de validación.
     public boolean tieneErrores() {
         return !erroresValidacion.isEmpty();
     }
     
-    /**
-     * Obtiene todos los errores como una cadena concatenada.
-     */
+    // Obtiene todos los errores como una cadena concatenada.
     public String getErroresComoCadena() {
         return String.join("; ", erroresValidacion);
     }

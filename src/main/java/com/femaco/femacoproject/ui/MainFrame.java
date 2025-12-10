@@ -276,11 +276,11 @@ public class MainFrame extends JFrame {
     
     private void configurarVisibilidadPestanas() {
         // Por defecto, mostrar todas las pestañas creadas
-        // Puedes agregar lógica adicional aquí para restringir más según necesidades específicas
+        // Se puede agregar lógica adicional para restringir más según necesidades específicas
     }
     
     private Icon createIcon(String emoji) {
-        // Icono simple usando emoji - en producción usar imágenes reales
+        // Icono simple usando emoji
         return new Icon() {
             @Override
             public void paintIcon(Component c, Graphics g, int x, int y) {

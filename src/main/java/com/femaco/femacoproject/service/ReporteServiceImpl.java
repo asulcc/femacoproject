@@ -7,6 +7,8 @@ import com.femaco.femacoproject.model.Producto;
 import com.femaco.femacoproject.model.enums.CategoriaProducto;
 import com.femaco.femacoproject.model.enums.TipoMovimiento;
 import com.femaco.femacoproject.util.Logger;
+import static com.femaco.femacoproject.model.enums.EstadoProducto.*;
+
 
 import java.util.*;
 import java.util.stream.Collectors;
@@ -28,7 +30,7 @@ public class ReporteServiceImpl implements ReporteService {
     public List<Producto> generarReporteStockActual() {
         logger.info("Generando reporte de stock actual");
         return productoDAO.obtenerTodos().stream()
-                .filter(p -> p.getEstado() != com.femaco.femacoproject.model.enums.EstadoProducto.INACTIVO)
+                .filter(p -> p.getEstado() != INACTIVO)
                 .collect(Collectors.toList());
     }
     
@@ -41,7 +43,7 @@ public class ReporteServiceImpl implements ReporteService {
     @Override
     public List<Producto> generarReporteStockCritico() {
         logger.info("Generando reporte de stock crítico");
-        return productoDAO.obtenerPorEstado(com.femaco.femacoproject.model.enums.EstadoProducto.STOCK_CRITICO);
+        return productoDAO.obtenerPorEstado(STOCK_CRITICO);
     }
     
     @Override
@@ -51,7 +53,7 @@ public class ReporteServiceImpl implements ReporteService {
         
         for (CategoriaProducto categoria : CategoriaProducto.values()) {
             List<Producto> productos = productoDAO.obtenerPorCategoria(categoria).stream()
-                    .filter(p -> p.getEstado() != com.femaco.femacoproject.model.enums.EstadoProducto.INACTIVO)
+                    .filter(p -> p.getEstado() != INACTIVO)
                     .collect(Collectors.toList());
             reporte.put(categoria, productos);
         }
@@ -66,7 +68,7 @@ public class ReporteServiceImpl implements ReporteService {
         
         for (CategoriaProducto categoria : CategoriaProducto.values()) {
             double valorTotal = productoDAO.obtenerPorCategoria(categoria).stream()
-                    .filter(p -> p.getEstado() != com.femaco.femacoproject.model.enums.EstadoProducto.INACTIVO)
+                    .filter(p -> p.getEstado() != INACTIVO)
                     .mapToDouble(Producto::calcularValorTotalStock)
                     .sum();
             reporte.put(categoria, valorTotal);
@@ -211,7 +213,7 @@ public class ReporteServiceImpl implements ReporteService {
     public double generarReporteValorTotalInventario() {
         logger.info("Generando reporte de valor total del inventario");
         return productoDAO.obtenerTodos().stream()
-                .filter(p -> p.getEstado() != com.femaco.femacoproject.model.enums.EstadoProducto.INACTIVO)
+                .filter(p -> p.getEstado() != INACTIVO)
                 .mapToDouble(Producto::calcularValorTotalStock)
                 .sum();
     }
@@ -259,11 +261,54 @@ public class ReporteServiceImpl implements ReporteService {
     @Override
     public boolean exportarReporteCSV(List<?> datos, String nombreArchivo) {
         logger.info("Exportando reporte a CSV: " + nombreArchivo);
-        // Implementación de exportación CSV
-        // En producción, usar biblioteca como OpenCSV
         try {
-            // Código de exportación simplificado
-            return true;
+            // Crear directorio de reportes si no existe
+            String rutaCarpeta = "reportes";
+            java.nio.file.Path carpeta = java.nio.file.Paths.get(rutaCarpeta);
+            if (!java.nio.file.Files.exists(carpeta)) {
+                java.nio.file.Files.createDirectories(carpeta);
+            }
+
+            // Crear archivo CSV
+            String rutaCompleta = rutaCarpeta + "/" + nombreArchivo;
+            java.io.File archivo = new java.io.File(rutaCompleta);
+
+            try (java.io.FileWriter fileWriter = new java.io.FileWriter(archivo);
+                 java.io.BufferedWriter bufferedWriter = new java.io.BufferedWriter(fileWriter)) {
+
+                if (datos == null || datos.isEmpty()) {
+                    logger.warning("No hay datos para exportar");
+                    return false;
+                }
+
+                // Escribir datos en formato CSV
+                for (Object fila : datos) {
+                    if (fila instanceof java.util.Vector) {
+                        java.util.Vector<?> vector = (java.util.Vector<?>) fila;
+                        StringBuilder linea = new StringBuilder();
+                        for (int i = 0; i < vector.size(); i++) {
+                            Object valor = vector.get(i);
+                            String valorStr = valor != null ? valor.toString() : "";
+                            
+                            // Escapar comillas y valores con comas
+                            if (valorStr.contains(",") || valorStr.contains("\"") || valorStr.contains("\n")) {
+                                valorStr = "\"" + valorStr.replace("\"", "\"\"") + "\"";
+                            }
+                            
+                            linea.append(valorStr);
+                            if (i < vector.size() - 1) {
+                                linea.append(",");
+                            }
+                        }
+                        bufferedWriter.write(linea.toString());
+                        bufferedWriter.newLine();
+                    }
+                }
+
+                logger.info("Reporte exportado exitosamente a: " + rutaCompleta);
+                return true;
+            }
+
         } catch (Exception e) {
             logger.error("Error al exportar reporte CSV: " + nombreArchivo, e);
             return false;
@@ -293,7 +338,7 @@ public class ReporteServiceImpl implements ReporteService {
         resumen.put("totalProductos", productoDAO.contarTotalProductos());
         resumen.put("valorTotalInventario", generarReporteValorTotalInventario());
         resumen.put("productosStockBajo", productoDAO.obtenerStockBajo().size());
-        resumen.put("productosStockCritico", productoDAO.obtenerPorEstado(com.femaco.femacoproject.model.enums.EstadoProducto.STOCK_CRITICO).size());
+        resumen.put("productosStockCritico", productoDAO.obtenerPorEstado(STOCK_CRITICO).size());
         
         // Movimientos del mes
         Calendar cal = Calendar.getInstance();

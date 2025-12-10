@@ -69,8 +69,6 @@ public class AlertaServiceImpl implements AlertaService {
     @Override
     public List<Producto> verificarProductosInactivos() {
         logger.info("Verificando productos inactivos");
-        // En producción, se consultaría la base de datos por productos sin movimientos recientes
-        // Implementación simplificada:
         return new ArrayList<>();
     }
     
@@ -161,7 +159,7 @@ public class AlertaServiceImpl implements AlertaService {
         verificarProveedoresSinProductos();
         verificarProductosSinProveedor();
         
-        // En producción, aquí se enviarían notificaciones por email, etc.
+        // En futuro, aquí se enviarían notificaciones por email, etc.
         if (hayAlertasPendientes()) {
             logger.warning("Hay " + alertasActivas.tamaño() + " alertas pendientes que requieren atención");
         }

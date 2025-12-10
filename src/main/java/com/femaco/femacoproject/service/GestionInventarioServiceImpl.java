@@ -120,11 +120,11 @@ public class GestionInventarioServiceImpl implements GestionInventarioService {
     @Override
     public Producto buscarProducto(String id) throws ProductoNoEncontradoException {
         try {
-            // Búsqueda en árbol binario (más rápido)
+            // Búsqueda en árbol binario
             Producto producto = arbolProductos.buscar(new Producto(id, "", CategoriaProducto.HERRAMIENTAS_MANUALES, 0, 0, null));
             
             if (producto == null) {
-                // Fallback a DAO si no está en el árbol
+                // Volver al DAO si no está en el árbol
                 producto = productoDAO.obtenerPorId(id)
                     .orElseThrow(() -> new ProductoNoEncontradoException("Producto no encontrado: " + id));
                 arbolProductos.insertar(producto); // Agregar al árbol para futuras búsquedas

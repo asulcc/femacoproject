@@ -1,16 +1,10 @@
 package com.femaco.femacoproject.exception;
 
-/**
- * Excepción lanzada cuando un usuario no existe en el sistema.
- * Se utiliza en operaciones de búsqueda, actualización o autenticación de usuarios.
- */
 public class UsuarioNoEncontradoException extends InventarioException {
     private final String usuarioId;
     private final String criterioBusqueda;
     
-    /**
-     * Constructor con ID del usuario.
-     */
+    // Constructor con ID del usuario.
     public UsuarioNoEncontradoException(String usuarioId) {
         super(crearMensajePorId(usuarioId),
               "USUARIO_NO_ENCONTRADO", 
@@ -20,9 +14,7 @@ public class UsuarioNoEncontradoException extends InventarioException {
         this.criterioBusqueda = "ID";
     }
     
-    /**
-     * Constructor con username.
-     */
+    // Constructor con username.
     public UsuarioNoEncontradoException(String criterioBusqueda, String valor) {
         super(crearMensajePorCriterio(criterioBusqueda, valor),
               "USUARIO_NO_ENCONTRADO", 
@@ -32,9 +24,7 @@ public class UsuarioNoEncontradoException extends InventarioException {
         this.criterioBusqueda = criterioBusqueda;
     }
     
-    /**
-     * Constructor con causa.
-     */
+    // Constructor con causa.
     public UsuarioNoEncontradoException(String mensaje, Throwable causa) {
         super(mensaje, "USUARIO_NO_ENCONTRADO", "GESTION_USUARIOS", "BUSCAR_USUARIO", causa);
         this.usuarioId = "DESCONOCIDO";
@@ -58,16 +48,12 @@ public class UsuarioNoEncontradoException extends InventarioException {
         return criterioBusqueda;
     }
     
-    /**
-     * Indica si la búsqueda fue por ID.
-     */
+    // Indica si la búsqueda fue por ID.
     public boolean esBusquedaPorId() {
         return "ID".equals(criterioBusqueda);
     }
     
-    /**
-     * Indica si la búsqueda fue por username.
-     */
+    // Indica si la búsqueda fue por username.
     public boolean esBusquedaPorUsername() {
         return "USERNAME".equals(criterioBusqueda);
     }

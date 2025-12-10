@@ -28,7 +28,7 @@ public class Usuario {
         this.fechaCreacion = new Date();
     }
     
-    // Constructor mínimo
+    // Constructor simplificado
     public Usuario(String id, String username, String password, 
                    String nombreCompleto, RolUsuario rol) {
         this(id, username, password, nombreCompleto, null, rol);

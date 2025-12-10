@@ -9,69 +9,6 @@ public class DatabaseConnection {
     private static DatabaseConnection instance;
     private Connection connection;
     private static final String DATABASE_URL = "jdbc:sqlite:inventario_femaco.db";
-    private static final String CREATE_TABLES_SQL = """
-            -- Tabla de productos
-            CREATE TABLE IF NOT EXISTS PRODUCTOS (
-                id VARCHAR(20) PRIMARY KEY,
-                nombre VARCHAR(100) NOT NULL,
-                categoria VARCHAR(50) NOT NULL,
-                stock_actual INTEGER NOT NULL CHECK (stock_actual >= 0),
-                stock_minimo INTEGER NOT NULL CHECK (stock_minimo >= 0),
-                precio DECIMAL(10,2) NOT NULL CHECK (precio >= 0),
-                ubicacion VARCHAR(20) NOT NULL,
-                estado VARCHAR(20) DEFAULT 'ACTIVO',
-                proveedor_id VARCHAR(20),
-                fecha_creacion DATETIME DEFAULT CURRENT_TIMESTAMP,
-                fecha_actualizacion DATETIME DEFAULT CURRENT_TIMESTAMP
-            );
-            
-            -- Tabla de movimientos
-            CREATE TABLE IF NOT EXISTS MOVIMIENTOS (
-                id INTEGER PRIMARY KEY AUTOINCREMENT,
-                producto_id VARCHAR(20) NOT NULL,
-                tipo VARCHAR(10) NOT NULL CHECK (tipo IN ('ENTRADA', 'SALIDA', 'AJUSTE')),
-                cantidad INTEGER NOT NULL CHECK (cantidad > 0),
-                motivo TEXT,
-                fecha DATETIME DEFAULT CURRENT_TIMESTAMP,
-                usuario_id VARCHAR(20) NOT NULL,
-                referencia VARCHAR(50),
-                FOREIGN KEY (producto_id) REFERENCES PRODUCTOS(id) ON DELETE CASCADE
-            );
-            
-            -- Tabla de proveedores
-            CREATE TABLE IF NOT EXISTS PROVEEDORES (
-                id VARCHAR(20) PRIMARY KEY,
-                nombre VARCHAR(100) NOT NULL,
-                contacto VARCHAR(100),
-                telefono VARCHAR(15),
-                email VARCHAR(100),
-                direccion TEXT,
-                activo BOOLEAN DEFAULT TRUE,
-                fecha_registro DATETIME DEFAULT CURRENT_TIMESTAMP
-            );
-            
-            -- Tabla de usuarios
-            CREATE TABLE IF NOT EXISTS USUARIOS (
-                id VARCHAR(20) PRIMARY KEY,
-                username VARCHAR(50) UNIQUE NOT NULL,
-                password VARCHAR(100) NOT NULL,
-                nombre_completo VARCHAR(100) NOT NULL,
-                email VARCHAR(100),
-                rol VARCHAR(15) NOT NULL CHECK (rol IN ('ADMINISTRADOR', 'ALMACENERO', 'SUPERVISOR')),
-                activo BOOLEAN DEFAULT TRUE,
-                fecha_creacion DATETIME DEFAULT CURRENT_TIMESTAMP,
-                ultimo_acceso DATETIME
-            );
-            
-            -- Índices para optimización
-            CREATE INDEX IF NOT EXISTS idx_productos_categoria ON PRODUCTOS(categoria);
-            CREATE INDEX IF NOT EXISTS idx_productos_estado ON PRODUCTOS(estado);
-            CREATE INDEX IF NOT EXISTS idx_productos_stock ON PRODUCTOS(stock_actual);
-            CREATE INDEX IF NOT EXISTS idx_movimientos_producto_id ON MOVIMIENTOS(producto_id);
-            CREATE INDEX IF NOT EXISTS idx_movimientos_fecha ON MOVIMIENTOS(fecha);
-            CREATE INDEX IF NOT EXISTS idx_movimientos_tipo ON MOVIMIENTOS(tipo);
-            CREATE INDEX IF NOT EXISTS idx_usuarios_username ON USUARIOS(username);
-            """;
     
     private static final String INSERT_DEFAULT_DATA = """
             -- Insertar usuario administrador por defecto (password: admin123)
@@ -122,9 +59,6 @@ public class DatabaseConnection {
     public void inicializarBaseDatos() {
         try (Connection conn = getConnection();
              Statement stmt = conn.createStatement()) {
-            
-            // Crear tablas
-            stmt.executeUpdate(CREATE_TABLES_SQL);
             
             // Insertar datos por defecto
             stmt.executeUpdate(INSERT_DEFAULT_DATA);

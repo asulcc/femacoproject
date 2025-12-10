@@ -2,18 +2,12 @@ package com.femaco.femacoproject.exception;
 
 import java.sql.SQLException;
 
-/**
- * Excepción lanzada cuando ocurre un error en la capa de base de datos.
- * Encapsula excepciones SQL y proporciona información adicional.
- */
 public class DatabaseException extends InventarioException {
     private final String consultaSQL;
     private final String codigoErrorSQL;
     private final String estadoSQL;
     
-    /**
-     * Constructor a partir de una SQLException.
-     */
+    /** Constructor a partir de una SQLException. */
     public DatabaseException(SQLException sqlException, String consultaSQL) {
         super(crearMensaje(sqlException, consultaSQL),
               "ERROR_BASE_DATOS", 
@@ -25,9 +19,7 @@ public class DatabaseException extends InventarioException {
         this.estadoSQL = sqlException.getSQLState();
     }
     
-    /**
-     * Constructor para errores de conexión.
-     */
+    /** Constructor para errores de conexión. */
     public DatabaseException(String mensaje, String consultaSQL, Throwable causa) {
         super(mensaje, "ERROR_CONEXION_BD", "PERSISTENCIA", "CONECTAR_BD", causa);
         this.consultaSQL = consultaSQL;
@@ -54,30 +46,22 @@ public class DatabaseException extends InventarioException {
         return estadoSQL;
     }
     
-    /**
-     * Indica si es un error de conexión.
-     */
+    /** Indica si es un error de conexión. */
     public boolean esErrorConexion() {
         return "ERROR_CONEXION_BD".equals(getCodigoError());
     }
     
-    /**
-     * Indica si es un error de integridad referencial.
-     */
+    /** Indica si es un error de integridad referencial. */
     public boolean esErrorIntegridadReferencial() {
         return "23000".equals(estadoSQL); // Código SQLState para violación de restricción
     }
     
-    /**
-     * Indica si es un error de duplicado.
-     */
+    /** Indica si es un error de duplicado. */
     public boolean esErrorDuplicado() {
         return "23505".equals(estadoSQL); // Código SQLState para violación de unique constraint
     }
     
-    /**
-     * Obtiene la SQLException original si existe.
-     */
+    /** Obtiene la SQLException original si existe. */
     public SQLException getSQLExceptionOriginal() {
         Throwable causa = getCause();
         return (causa instanceof SQLException) ? (SQLException) causa : null;

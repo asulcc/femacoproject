@@ -23,7 +23,7 @@ public class Proveedor {
         this.fechaRegistro = new Date();
     }
     
-    // Constructor mínimo
+    // Constructor simplificado
     public Proveedor(String id, String nombre) {
         this(id, nombre, null, null);
     }

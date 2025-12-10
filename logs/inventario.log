@@ -112,3 +112,527 @@
 [2025-12-01 21:49:37] INFO - Cerrando aplicación...
 [2025-12-01 21:49:37] INFO - Realizando tareas de limpieza...
 [2025-12-01 21:49:37] INFO - Logger cerrado
+[2025-12-05 09:06:06] INFO - Logger inicializado - Sistema FEMACO Inventario
+[2025-12-05 09:06:06] INFO - Look and Feel configurado correctamente
+[2025-12-05 09:06:06] INFO - Iniciando Sistema de Gestión de Inventario FEMACO v1.0
+[2025-12-05 09:06:06] INFO - Inicializando base de datos...
+[2025-12-05 09:06:06] INFO - Base de datos inicializada correctamente
+[2025-12-05 09:06:06] INFO - Creando interfaz gráfica principal...
+[2025-12-05 09:06:06] INFO - Cargados 0 productos en árbol binario
+[2025-12-05 09:14:09] INFO - Logger inicializado - Sistema FEMACO Inventario
+[2025-12-05 09:14:09] INFO - Look and Feel configurado correctamente
+[2025-12-05 09:14:09] INFO - Iniciando Sistema de Gestión de Inventario FEMACO v1.0
+[2025-12-05 09:14:09] INFO - Inicializando base de datos...
+[2025-12-05 09:14:09] INFO - Base de datos inicializada correctamente
+[2025-12-05 09:14:09] INFO - Creando interfaz gráfica principal...
+[2025-12-05 09:14:09] INFO - Cargados 0 productos en árbol binario
+[2025-12-05 09:14:52] INFO - Logger inicializado - Sistema FEMACO Inventario
+[2025-12-05 09:14:52] INFO - Look and Feel configurado correctamente
+[2025-12-05 09:14:52] INFO - Iniciando Sistema de Gestión de Inventario FEMACO v1.0
+[2025-12-05 09:14:52] INFO - Inicializando base de datos...
+[2025-12-05 09:14:52] INFO - Base de datos inicializada correctamente
+[2025-12-05 09:14:52] INFO - Creando interfaz gráfica principal...
+[2025-12-05 09:14:52] INFO - Cargados 0 productos en árbol binario
+[2025-12-10 01:23:28] INFO - Logger inicializado - Sistema FEMACO Inventario
+[2025-12-10 01:23:28] INFO - Look and Feel configurado correctamente
+[2025-12-10 01:23:28] INFO - Iniciando Sistema de Gestión de Inventario FEMACO v1.0
+[2025-12-10 01:23:28] INFO - Inicializando base de datos...
+[2025-12-10 01:23:28] INFO - Base de datos inicializada correctamente
+[2025-12-10 01:23:28] INFO - Creando interfaz gráfica principal...
+[2025-12-10 01:23:28] ERROR - Error al cargar productos en árbol - No enum constant com.femaco.femacoproject.model.enums.CategoriaProducto.Adhesivos
+[2025-12-10 01:23:44] INFO - Usuario autenticado exitosamente: admin - Rol: ADMINISTRADOR
+[2025-12-10 01:23:44] INFO - Usuario autenticado exitosamente: admin - Rol: ADMINISTRADOR
+[2025-12-10 01:23:45] INFO - Generando reporte de valor total del inventario
+[2025-12-10 01:24:04] INFO - Interfaz gráfica creada correctamente
+[2025-12-10 01:24:16] INFO - Sesión cerrada para usuario: ADM001
+[2025-12-10 01:24:18] INFO - Cerrando aplicación...
+[2025-12-10 01:24:18] INFO - Realizando tareas de limpieza...
+[2025-12-10 01:24:18] INFO - Logger cerrado
+[2025-12-10 05:00:11] INFO - Logger inicializado - Sistema FEMACO Inventario
+[2025-12-10 05:00:11] INFO - Look and Feel configurado correctamente
+[2025-12-10 05:00:11] INFO - Iniciando Sistema de Gestión de Inventario FEMACO v1.0
+[2025-12-10 05:00:11] INFO - Inicializando base de datos...
+[2025-12-10 05:00:11] INFO - Base de datos inicializada correctamente
+[2025-12-10 05:00:11] INFO - Creando interfaz gráfica principal...
+[2025-12-10 05:00:11] ERROR - Error al cargar productos en árbol - No enum constant com.femaco.femacoproject.model.enums.CategoriaProducto.Materiales de Construcción
+[2025-12-10 05:00:18] INFO - Usuario autenticado exitosamente: admin - Rol: ADMINISTRADOR
+[2025-12-10 05:00:18] INFO - Usuario autenticado exitosamente: admin - Rol: ADMINISTRADOR
+[2025-12-10 05:00:19] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:00:35] INFO - Interfaz gráfica creada correctamente
+[2025-12-10 05:01:03] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:01:33] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:02:03] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:02:29] INFO - Sesión cerrada para usuario: ADM001
+[2025-12-10 05:02:34] INFO - Cerrando aplicación...
+[2025-12-10 05:02:34] INFO - Realizando tareas de limpieza...
+[2025-12-10 05:02:34] INFO - Logger cerrado
+[2025-12-10 05:05:10] INFO - Logger inicializado - Sistema FEMACO Inventario
+[2025-12-10 05:05:10] INFO - Look and Feel configurado correctamente
+[2025-12-10 05:05:10] INFO - Iniciando Sistema de Gestión de Inventario FEMACO v1.0
+[2025-12-10 05:05:10] INFO - Inicializando base de datos...
+[2025-12-10 05:05:10] INFO - Base de datos inicializada correctamente
+[2025-12-10 05:05:10] INFO - Creando interfaz gráfica principal...
+[2025-12-10 05:05:10] ERROR - Error al cargar productos en árbol - No enum constant com.femaco.femacoproject.model.enums.CategoriaProducto.Materiales de Construcción
+[2025-12-10 05:05:15] INFO - Usuario autenticado exitosamente: admin - Rol: ADMINISTRADOR
+[2025-12-10 05:05:15] INFO - Usuario autenticado exitosamente: admin - Rol: ADMINISTRADOR
+[2025-12-10 05:05:16] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:05:41] INFO - Interfaz gráfica creada correctamente
+[2025-12-10 05:06:09] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:10:49] INFO - Sesión cerrada para usuario: ADM001
+[2025-12-10 05:10:55] INFO - Usuario autenticado exitosamente: admin - Rol: ADMINISTRADOR
+[2025-12-10 05:10:55] INFO - Usuario autenticado exitosamente: admin - Rol: ADMINISTRADOR
+[2025-12-10 05:10:56] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:11:43] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:18:13] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:18:43] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:19:13] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:19:43] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:20:13] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:20:30] INFO - Generando reporte de stock actual
+[2025-12-10 05:20:30] INFO - Generando reporte de stock bajo
+[2025-12-10 05:20:30] INFO - Generando reporte de stock crítico
+[2025-12-10 05:20:43] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:20:50] INFO - Exportando reporte a CSV: reporte_20251210_052050.csv
+[2025-12-10 05:21:13] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:21:43] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:22:13] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:22:43] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:23:13] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:23:43] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:24:13] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:24:43] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:25:13] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:25:43] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:26:13] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:26:43] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:27:13] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:27:43] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:28:06] INFO - MOVIMIENTO - Usuario: ADM001 - Producto: PROD003 - Tipo: ENTRADA - Cantidad: 21
+[2025-12-10 05:28:13] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:28:43] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:29:13] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:29:43] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:30:13] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:30:43] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:31:13] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:31:43] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:32:13] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:32:43] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:33:13] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:33:43] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:34:13] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:34:43] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:35:13] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:35:43] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:36:13] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:36:43] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:37:13] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:37:33] INFO - Sesión cerrada para usuario: ADM001
+[2025-12-10 05:37:40] INFO - Usuario autenticado exitosamente: admin - Rol: ADMINISTRADOR
+[2025-12-10 05:37:40] INFO - Usuario autenticado exitosamente: admin - Rol: ADMINISTRADOR
+[2025-12-10 05:37:41] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:38:11] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:38:41] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:39:11] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:39:41] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:40:11] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:40:18] INFO - Generando reporte de stock actual
+[2025-12-10 05:40:18] INFO - Generando reporte de stock bajo
+[2025-12-10 05:40:18] INFO - Generando reporte de stock crítico
+[2025-12-10 05:40:41] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:41:11] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:41:41] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:42:11] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:42:41] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:43:04] INFO - Generando reporte de stock actual
+[2025-12-10 05:43:04] INFO - Generando reporte de stock bajo
+[2025-12-10 05:43:04] INFO - Generando reporte de stock crítico
+[2025-12-10 05:43:11] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:43:41] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:44:11] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:44:41] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:45:11] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:45:41] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:46:11] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:46:41] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:46:57] INFO - Generando reporte de stock actual
+[2025-12-10 05:46:57] INFO - Generando reporte de stock bajo
+[2025-12-10 05:46:57] INFO - Generando reporte de stock crítico
+[2025-12-10 05:46:59] INFO - Generando reporte de stock actual
+[2025-12-10 05:46:59] INFO - Generando reporte de stock bajo
+[2025-12-10 05:46:59] INFO - Generando reporte de stock crítico
+[2025-12-10 05:46:59] INFO - Generando reporte de stock actual
+[2025-12-10 05:46:59] INFO - Generando reporte de stock bajo
+[2025-12-10 05:46:59] INFO - Generando reporte de stock crítico
+[2025-12-10 05:47:11] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:47:41] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:48:11] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:48:21] INFO - Generando reporte de stock actual
+[2025-12-10 05:48:21] INFO - Generando reporte de stock bajo
+[2025-12-10 05:48:21] INFO - Generando reporte de stock crítico
+[2025-12-10 05:48:22] INFO - Generando reporte de stock actual
+[2025-12-10 05:48:22] INFO - Generando reporte de stock bajo
+[2025-12-10 05:48:22] INFO - Generando reporte de stock crítico
+[2025-12-10 05:48:23] INFO - Generando reporte de stock actual
+[2025-12-10 05:48:23] INFO - Generando reporte de stock bajo
+[2025-12-10 05:48:23] INFO - Generando reporte de stock crítico
+[2025-12-10 05:48:23] INFO - Generando reporte de stock actual
+[2025-12-10 05:48:23] INFO - Generando reporte de stock bajo
+[2025-12-10 05:48:23] INFO - Generando reporte de stock crítico
+[2025-12-10 05:48:23] INFO - Generando reporte de stock actual
+[2025-12-10 05:48:23] INFO - Generando reporte de stock bajo
+[2025-12-10 05:48:23] INFO - Generando reporte de stock crítico
+[2025-12-10 05:48:24] INFO - Generando reporte de stock actual
+[2025-12-10 05:48:24] INFO - Generando reporte de stock bajo
+[2025-12-10 05:48:24] INFO - Generando reporte de stock crítico
+[2025-12-10 05:48:24] INFO - Generando reporte de stock actual
+[2025-12-10 05:48:24] INFO - Generando reporte de stock bajo
+[2025-12-10 05:48:24] INFO - Generando reporte de stock crítico
+[2025-12-10 05:48:41] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:48:41] INFO - Generando reporte de stock bajo
+[2025-12-10 05:49:11] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:49:41] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:50:11] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:50:41] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:51:11] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:51:41] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:52:11] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:52:31] INFO - Sesión cerrada para usuario: ADM001
+[2025-12-10 05:52:32] INFO - Cerrando aplicación...
+[2025-12-10 05:52:32] INFO - Realizando tareas de limpieza...
+[2025-12-10 05:52:32] INFO - Logger cerrado
+[2025-12-10 05:52:35] INFO - Logger inicializado - Sistema FEMACO Inventario
+[2025-12-10 05:52:36] INFO - Look and Feel configurado correctamente
+[2025-12-10 05:52:36] INFO - Iniciando Sistema de Gestión de Inventario FEMACO v1.0
+[2025-12-10 05:52:36] INFO - Inicializando base de datos...
+[2025-12-10 05:52:36] INFO - Base de datos inicializada correctamente
+[2025-12-10 05:52:36] INFO - Creando interfaz gráfica principal...
+[2025-12-10 05:52:36] INFO - Cargados 75 productos en árbol binario
+[2025-12-10 05:52:42] INFO - Usuario autenticado exitosamente: admin - Rol: ADMINISTRADOR
+[2025-12-10 05:52:42] INFO - Usuario autenticado exitosamente: admin - Rol: ADMINISTRADOR
+[2025-12-10 05:52:43] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:52:45] INFO - Interfaz gráfica creada correctamente
+[2025-12-10 05:53:13] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:53:21] INFO - Generando reporte de movimientos desde Mon Aug 04 05:52:59 GMT-05:00 2025 hasta Sun Oct 05 05:53:12 GMT-05:00 2025
+[2025-12-10 05:53:43] INFO - Generando reporte de valor total del inventario
+[2025-12-10 05:53:54] INFO - Cerrando aplicación...
+[2025-12-10 05:53:54] INFO - Realizando tareas de limpieza...
+[2025-12-10 05:53:54] INFO - Logger cerrado
+[2025-12-10 07:09:32] INFO - Logger inicializado - Sistema FEMACO Inventario
+[2025-12-10 07:09:32] INFO - Look and Feel configurado correctamente
+[2025-12-10 07:09:32] INFO - Iniciando Sistema de Gestión de Inventario FEMACO v1.0
+[2025-12-10 07:09:32] INFO - Inicializando base de datos...
+[2025-12-10 07:09:33] INFO - Base de datos inicializada correctamente
+[2025-12-10 07:09:33] INFO - Creando interfaz gráfica principal...
+[2025-12-10 07:09:33] INFO - Cargados 75 productos en árbol binario
+[2025-12-10 07:09:38] INFO - Usuario autenticado exitosamente: admin - Rol: ADMINISTRADOR
+[2025-12-10 07:09:38] INFO - Usuario autenticado exitosamente: admin - Rol: ADMINISTRADOR
+[2025-12-10 07:09:39] INFO - Generando reporte de valor total del inventario
+[2025-12-10 07:09:40] INFO - Interfaz gráfica creada correctamente
+[2025-12-10 07:10:09] INFO - Generando reporte de valor total del inventario
+[2025-12-10 07:10:39] INFO - Generando reporte de valor total del inventario
+[2025-12-10 07:11:09] INFO - Generando reporte de valor total del inventario
+[2025-12-10 07:11:39] INFO - Generando reporte de valor total del inventario
+[2025-12-10 07:12:09] INFO - Generando reporte de valor total del inventario
+[2025-12-10 07:12:39] INFO - Generando reporte de valor total del inventario
+[2025-12-10 07:12:52] INFO - Cerrando aplicación...
+[2025-12-10 07:12:52] INFO - Realizando tareas de limpieza...
+[2025-12-10 07:12:52] INFO - Logger cerrado
+[2025-12-10 07:17:16] INFO - Logger inicializado - Sistema FEMACO Inventario
+[2025-12-10 07:17:16] INFO - Look and Feel configurado correctamente
+[2025-12-10 07:17:16] INFO - Iniciando Sistema de Gestión de Inventario FEMACO v1.0
+[2025-12-10 07:17:16] INFO - Inicializando base de datos...
+[2025-12-10 07:17:16] INFO - Base de datos inicializada correctamente
+[2025-12-10 07:17:16] INFO - Creando interfaz gráfica principal...
+[2025-12-10 07:17:16] INFO - Cargados 75 productos en árbol binario
+[2025-12-10 07:17:23] INFO - Usuario autenticado exitosamente: admin - Rol: ADMINISTRADOR
+[2025-12-10 07:17:23] INFO - Usuario autenticado exitosamente: admin - Rol: ADMINISTRADOR
+[2025-12-10 07:17:24] INFO - Generando reporte de valor total del inventario
+[2025-12-10 07:17:25] INFO - Interfaz gráfica creada correctamente
+[2025-12-10 07:17:54] INFO - Generando reporte de valor total del inventario
+[2025-12-10 07:18:24] INFO - Generando reporte de valor total del inventario
+[2025-12-10 07:18:54] INFO - Generando reporte de valor total del inventario
+[2025-12-10 07:18:57] INFO - Sesión cerrada para usuario: ADM001
+[2025-12-10 07:19:01] INFO - Usuario autenticado exitosamente: admin - Rol: ADMINISTRADOR
+[2025-12-10 07:19:01] INFO - Usuario autenticado exitosamente: admin - Rol: ADMINISTRADOR
+[2025-12-10 07:19:02] INFO - Generando reporte de valor total del inventario
+[2025-12-10 07:19:23] INFO - Sesión cerrada para usuario: ADM001
+[2025-12-10 07:19:24] INFO - Cerrando aplicación...
+[2025-12-10 07:19:24] INFO - Realizando tareas de limpieza...
+[2025-12-10 07:19:24] INFO - Logger cerrado
+[2025-12-10 07:19:29] INFO - Logger inicializado - Sistema FEMACO Inventario
+[2025-12-10 07:19:29] INFO - Look and Feel configurado correctamente
+[2025-12-10 07:19:29] INFO - Iniciando Sistema de Gestión de Inventario FEMACO v1.0
+[2025-12-10 07:19:29] INFO - Inicializando base de datos...
+[2025-12-10 07:19:30] INFO - Base de datos inicializada correctamente
+[2025-12-10 07:19:30] INFO - Creando interfaz gráfica principal...
+[2025-12-10 07:19:30] INFO - Cargados 75 productos en árbol binario
+[2025-12-10 07:19:35] INFO - Usuario autenticado exitosamente: admin - Rol: ADMINISTRADOR
+[2025-12-10 07:19:35] INFO - Usuario autenticado exitosamente: admin - Rol: ADMINISTRADOR
+[2025-12-10 07:19:36] INFO - Generando reporte de valor total del inventario
+[2025-12-10 07:19:37] INFO - Interfaz gráfica creada correctamente
+[2025-12-10 07:20:06] INFO - Generando reporte de valor total del inventario
+[2025-12-10 07:20:29] INFO - Cerrando aplicación...
+[2025-12-10 07:20:29] INFO - Realizando tareas de limpieza...
+[2025-12-10 07:20:29] INFO - Logger cerrado
+[2025-12-10 07:24:51] INFO - Logger inicializado - Sistema FEMACO Inventario
+[2025-12-10 07:24:51] INFO - Look and Feel configurado correctamente
+[2025-12-10 07:24:51] INFO - Iniciando Sistema de Gestión de Inventario FEMACO v1.0
+[2025-12-10 07:24:51] INFO - Inicializando base de datos...
+[2025-12-10 07:24:51] INFO - Base de datos inicializada correctamente
+[2025-12-10 07:24:51] INFO - Creando interfaz gráfica principal...
+[2025-12-10 07:24:52] INFO - Cargados 75 productos en árbol binario
+[2025-12-10 07:24:56] INFO - Usuario autenticado exitosamente: admin - Rol: ADMINISTRADOR
+[2025-12-10 07:24:56] INFO - Usuario autenticado exitosamente: admin - Rol: ADMINISTRADOR
+[2025-12-10 07:24:57] INFO - Generando reporte de valor total del inventario
+[2025-12-10 07:24:58] INFO - Interfaz gráfica creada correctamente
+[2025-12-10 07:25:09] INFO - Sesión cerrada para usuario: ADM001
+[2025-12-10 07:25:10] INFO - Cerrando aplicación...
+[2025-12-10 07:25:10] INFO - Realizando tareas de limpieza...
+[2025-12-10 07:25:10] INFO - Logger cerrado
+[2025-12-10 07:25:31] INFO - Logger inicializado - Sistema FEMACO Inventario
+[2025-12-10 07:25:32] INFO - Look and Feel configurado correctamente
+[2025-12-10 07:25:32] INFO - Iniciando Sistema de Gestión de Inventario FEMACO v1.0
+[2025-12-10 07:25:32] INFO - Inicializando base de datos...
+[2025-12-10 07:25:32] INFO - Base de datos inicializada correctamente
+[2025-12-10 07:25:32] INFO - Creando interfaz gráfica principal...
+[2025-12-10 07:25:32] INFO - Cargados 75 productos en árbol binario
+[2025-12-10 07:25:36] INFO - Usuario autenticado exitosamente: admin - Rol: ADMINISTRADOR
+[2025-12-10 07:25:36] INFO - Usuario autenticado exitosamente: admin - Rol: ADMINISTRADOR
+[2025-12-10 07:25:37] INFO - Generando reporte de valor total del inventario
+[2025-12-10 07:25:39] INFO - Interfaz gráfica creada correctamente
+[2025-12-10 07:26:08] INFO - Generando reporte de valor total del inventario
+[2025-12-10 07:26:38] INFO - Generando reporte de valor total del inventario
+[2025-12-10 07:27:08] INFO - Generando reporte de valor total del inventario
+[2025-12-10 07:27:38] INFO - Generando reporte de valor total del inventario
+[2025-12-10 07:28:08] INFO - Generando reporte de valor total del inventario
+[2025-12-10 07:28:38] INFO - Generando reporte de valor total del inventario
+[2025-12-10 07:29:08] INFO - Generando reporte de valor total del inventario
+[2025-12-10 07:29:38] INFO - Generando reporte de valor total del inventario
+[2025-12-10 07:30:08] INFO - Generando reporte de valor total del inventario
+[2025-12-10 07:30:38] INFO - Generando reporte de valor total del inventario
+[2025-12-10 07:31:08] INFO - Generando reporte de valor total del inventario
+[2025-12-10 07:31:38] INFO - Generando reporte de valor total del inventario
+[2025-12-10 07:32:08] INFO - Generando reporte de valor total del inventario
+[2025-12-10 07:32:38] INFO - Generando reporte de valor total del inventario
+[2025-12-10 07:33:08] INFO - Generando reporte de valor total del inventario
+[2025-12-10 07:33:14] INFO - Logger inicializado - Sistema FEMACO Inventario
+[2025-12-10 07:33:14] INFO - Look and Feel configurado correctamente
+[2025-12-10 07:33:14] INFO - Iniciando Sistema de Gestión de Inventario FEMACO v1.0
+[2025-12-10 07:33:14] INFO - Inicializando base de datos...
+[2025-12-10 07:33:14] INFO - Base de datos inicializada correctamente
+[2025-12-10 07:33:14] INFO - Creando interfaz gráfica principal...
+[2025-12-10 07:33:14] INFO - Cargados 75 productos en árbol binario
+[2025-12-10 07:33:21] INFO - Usuario autenticado exitosamente: admin - Rol: ADMINISTRADOR
+[2025-12-10 07:33:21] INFO - Usuario autenticado exitosamente: admin - Rol: ADMINISTRADOR
+[2025-12-10 07:33:22] INFO - Generando reporte de valor total del inventario
+[2025-12-10 07:33:23] INFO - Interfaz gráfica creada correctamente
+[2025-12-10 07:33:33] INFO - Sesión cerrada para usuario: ADM001
+[2025-12-10 07:33:35] INFO - Cerrando aplicación...
+[2025-12-10 07:33:35] INFO - Realizando tareas de limpieza...
+[2025-12-10 07:33:35] INFO - Logger cerrado
+[2025-12-10 07:33:38] INFO - Generando reporte de valor total del inventario
+[2025-12-10 07:34:01] INFO - Logger inicializado - Sistema FEMACO Inventario
+[2025-12-10 07:34:01] INFO - Look and Feel configurado correctamente
+[2025-12-10 07:34:01] INFO - Iniciando Sistema de Gestión de Inventario FEMACO v1.0
+[2025-12-10 07:34:01] INFO - Inicializando base de datos...
+[2025-12-10 07:34:02] INFO - Base de datos inicializada correctamente
+[2025-12-10 07:34:02] INFO - Creando interfaz gráfica principal...
+[2025-12-10 07:34:02] INFO - Cargados 75 productos en árbol binario
+[2025-12-10 07:34:07] INFO - Usuario autenticado exitosamente: admin - Rol: ADMINISTRADOR
+[2025-12-10 07:34:07] INFO - Usuario autenticado exitosamente: admin - Rol: ADMINISTRADOR
+[2025-12-10 07:34:08] INFO - Generando reporte de valor total del inventario
+[2025-12-10 07:34:08] INFO - Generando reporte de valor total del inventario
+[2025-12-10 07:34:09] INFO - Interfaz gráfica creada correctamente
+[2025-12-10 07:34:38] INFO - Generando reporte de valor total del inventario
+[2025-12-10 07:34:38] INFO - Generando reporte de valor total del inventario
+[2025-12-10 07:35:08] INFO - Generando reporte de valor total del inventario
+[2025-12-10 07:35:08] INFO - Generando reporte de valor total del inventario
+[2025-12-10 07:35:38] INFO - Generando reporte de valor total del inventario
+[2025-12-10 07:35:38] INFO - Generando reporte de valor total del inventario
+[2025-12-10 07:36:08] INFO - Generando reporte de valor total del inventario
+[2025-12-10 07:36:08] INFO - Generando reporte de valor total del inventario
+[2025-12-10 07:36:38] INFO - Generando reporte de valor total del inventario
+[2025-12-10 07:36:38] INFO - Generando reporte de valor total del inventario
+[2025-12-10 07:37:08] INFO - Generando reporte de valor total del inventario
+[2025-12-10 07:37:08] INFO - Generando reporte de valor total del inventario
+[2025-12-10 07:37:38] INFO - Generando reporte de valor total del inventario
+[2025-12-10 07:37:38] INFO - Generando reporte de valor total del inventario
+[2025-12-10 07:38:08] INFO - Generando reporte de valor total del inventario
+[2025-12-10 07:38:08] INFO - Generando reporte de valor total del inventario
+[2025-12-10 07:38:36] INFO - Logger inicializado - Sistema FEMACO Inventario
+[2025-12-10 07:38:36] INFO - Look and Feel configurado correctamente
+[2025-12-10 07:38:36] INFO - Iniciando Sistema de Gestión de Inventario FEMACO v1.0
+[2025-12-10 07:38:36] INFO - Inicializando base de datos...
+[2025-12-10 07:38:36] INFO - Base de datos inicializada correctamente
+[2025-12-10 07:38:36] INFO - Creando interfaz gráfica principal...
+[2025-12-10 07:38:37] INFO - Cargados 75 productos en árbol binario
+[2025-12-10 07:38:38] INFO - Generando reporte de valor total del inventario
+[2025-12-10 07:38:38] INFO - Generando reporte de valor total del inventario
+[2025-12-10 07:38:43] INFO - Usuario autenticado exitosamente: admin - Rol: ADMINISTRADOR
+[2025-12-10 07:38:44] INFO - Usuario autenticado exitosamente: admin - Rol: ADMINISTRADOR
+[2025-12-10 07:38:45] INFO - Generando reporte de valor total del inventario
+[2025-12-10 07:38:46] INFO - Interfaz gráfica creada correctamente
+[2025-12-10 07:39:08] INFO - Generando reporte de valor total del inventario
+[2025-12-10 07:39:08] INFO - Generando reporte de valor total del inventario
+[2025-12-10 07:39:15] INFO - Generando reporte de valor total del inventario
+[2025-12-10 07:39:38] INFO - Generando reporte de valor total del inventario
+[2025-12-10 07:39:38] INFO - Generando reporte de valor total del inventario
+[2025-12-10 07:39:45] INFO - Generando reporte de valor total del inventario
+[2025-12-10 07:39:58] INFO - Cerrando aplicación...
+[2025-12-10 07:39:58] INFO - Realizando tareas de limpieza...
+[2025-12-10 07:39:58] INFO - Logger cerrado
+[2025-12-10 07:40:01] INFO - Cerrando aplicación...
+[2025-12-10 07:40:01] INFO - Realizando tareas de limpieza...
+[2025-12-10 07:40:01] INFO - Logger cerrado
+[2025-12-10 07:40:03] INFO - Cerrando aplicación...
+[2025-12-10 07:40:03] INFO - Realizando tareas de limpieza...
+[2025-12-10 07:40:03] INFO - Logger cerrado
+[2025-12-10 07:40:55] INFO - Logger inicializado - Sistema FEMACO Inventario
+[2025-12-10 07:40:56] INFO - Look and Feel configurado correctamente
+[2025-12-10 07:40:56] INFO - Iniciando Sistema de Gestión de Inventario FEMACO v1.0
+[2025-12-10 07:40:56] INFO - Inicializando base de datos...
+[2025-12-10 07:40:56] INFO - Base de datos inicializada correctamente
+[2025-12-10 07:40:56] INFO - Creando interfaz gráfica principal...
+[2025-12-10 07:40:56] INFO - Cargados 75 productos en árbol binario
+[2025-12-10 07:41:02] INFO - Usuario autenticado exitosamente: admin - Rol: ADMINISTRADOR
+[2025-12-10 07:41:02] INFO - Usuario autenticado exitosamente: admin - Rol: ADMINISTRADOR
+[2025-12-10 07:41:03] INFO - Generando reporte de valor total del inventario
+[2025-12-10 07:41:04] INFO - Interfaz gráfica creada correctamente
+[2025-12-10 07:41:33] INFO - Generando reporte de valor total del inventario
+[2025-12-10 07:42:04] INFO - Generando reporte de valor total del inventario
+[2025-12-10 07:42:34] INFO - Generando reporte de valor total del inventario
+[2025-12-10 07:43:04] INFO - Generando reporte de valor total del inventario
+[2025-12-10 07:43:34] INFO - Generando reporte de valor total del inventario
+[2025-12-10 07:44:04] INFO - Generando reporte de valor total del inventario
+[2025-12-10 07:44:34] INFO - Generando reporte de valor total del inventario
+[2025-12-10 07:45:04] INFO - Generando reporte de valor total del inventario
+[2025-12-10 07:45:34] INFO - Generando reporte de valor total del inventario
+[2025-12-10 07:45:37] INFO - Cerrando aplicación...
+[2025-12-10 07:45:37] INFO - Realizando tareas de limpieza...
+[2025-12-10 07:45:37] INFO - Logger cerrado
+[2025-12-10 07:45:40] INFO - Logger inicializado - Sistema FEMACO Inventario
+[2025-12-10 07:45:40] INFO - Look and Feel configurado correctamente
+[2025-12-10 07:45:40] INFO - Iniciando Sistema de Gestión de Inventario FEMACO v1.0
+[2025-12-10 07:45:40] INFO - Inicializando base de datos...
+[2025-12-10 07:45:41] INFO - Base de datos inicializada correctamente
+[2025-12-10 07:45:41] INFO - Creando interfaz gráfica principal...
+[2025-12-10 07:45:41] INFO - Cargados 75 productos en árbol binario
+[2025-12-10 07:45:47] INFO - Usuario autenticado exitosamente: admin - Rol: ADMINISTRADOR
+[2025-12-10 07:45:47] INFO - Usuario autenticado exitosamente: admin - Rol: ADMINISTRADOR
+[2025-12-10 07:45:48] INFO - Generando reporte de valor total del inventario
+[2025-12-10 07:45:49] INFO - Interfaz gráfica creada correctamente
+[2025-12-10 07:46:18] INFO - Generando reporte de valor total del inventario
+[2025-12-10 07:46:32] INFO - Sesión cerrada para usuario: ADM001
+[2025-12-10 07:46:33] INFO - Cerrando aplicación...
+[2025-12-10 07:46:33] INFO - Realizando tareas de limpieza...
+[2025-12-10 07:46:33] INFO - Logger cerrado
+[2025-12-10 07:46:36] INFO - Logger inicializado - Sistema FEMACO Inventario
+[2025-12-10 07:46:36] INFO - Look and Feel configurado correctamente
+[2025-12-10 07:46:36] INFO - Iniciando Sistema de Gestión de Inventario FEMACO v1.0
+[2025-12-10 07:46:36] INFO - Inicializando base de datos...
+[2025-12-10 07:46:36] INFO - Base de datos inicializada correctamente
+[2025-12-10 07:46:36] INFO - Creando interfaz gráfica principal...
+[2025-12-10 07:46:36] INFO - Cargados 75 productos en árbol binario
+[2025-12-10 07:46:41] INFO - Usuario autenticado exitosamente: admin - Rol: ADMINISTRADOR
+[2025-12-10 07:46:41] INFO - Usuario autenticado exitosamente: admin - Rol: ADMINISTRADOR
+[2025-12-10 07:46:42] INFO - Generando reporte de valor total del inventario
+[2025-12-10 07:46:44] INFO - Interfaz gráfica creada correctamente
+[2025-12-10 07:47:11] INFO - Cerrando aplicación...
+[2025-12-10 07:47:11] INFO - Realizando tareas de limpieza...
+[2025-12-10 07:47:11] INFO - Logger cerrado
+[2025-12-10 07:50:13] INFO - Logger inicializado - Sistema FEMACO Inventario
+[2025-12-10 07:50:13] INFO - Look and Feel configurado correctamente
+[2025-12-10 07:50:13] INFO - Iniciando Sistema de Gestión de Inventario FEMACO v1.0
+[2025-12-10 07:50:13] INFO - Inicializando base de datos...
+[2025-12-10 07:50:13] INFO - Base de datos inicializada correctamente
+[2025-12-10 07:50:13] INFO - Creando interfaz gráfica principal...
+[2025-12-10 07:50:13] INFO - Cargados 75 productos en árbol binario
+[2025-12-10 07:50:21] INFO - Usuario autenticado exitosamente: admin - Rol: ADMINISTRADOR
+[2025-12-10 07:50:21] INFO - Usuario autenticado exitosamente: admin - Rol: ADMINISTRADOR
+[2025-12-10 07:50:22] INFO - Generando reporte de valor total del inventario
+[2025-12-10 07:50:30] INFO - Interfaz gráfica creada correctamente
+[2025-12-10 07:50:53] INFO - Generando reporte de valor total del inventario
+[2025-12-10 07:50:57] INFO - Generando reporte de productos más vendidos
+[2025-12-10 07:50:59] INFO - Exportando reporte a CSV: reporte_20251210_075059.csv
+[2025-12-10 07:50:59] INFO - Reporte exportado exitosamente a: reportes/reporte_20251210_075059.csv
+[2025-12-10 07:51:23] INFO - Generando reporte de valor total del inventario
+[2025-12-10 07:51:29] INFO - Sesión cerrada para usuario: ADM001
+[2025-12-10 07:51:31] INFO - Cerrando aplicación...
+[2025-12-10 07:51:31] INFO - Realizando tareas de limpieza...
+[2025-12-10 07:51:31] INFO - Logger cerrado
+[2025-12-10 08:26:25] INFO - Logger inicializado - Sistema FEMACO Inventario
+[2025-12-10 08:26:25] INFO - Look and Feel configurado correctamente
+[2025-12-10 08:26:25] INFO - Iniciando Sistema de Gestión de Inventario FEMACO v1.0
+[2025-12-10 08:26:25] INFO - Inicializando base de datos...
+[2025-12-10 08:26:25] INFO - Base de datos inicializada correctamente
+[2025-12-10 08:26:25] INFO - Creando interfaz gráfica principal...
+[2025-12-10 08:26:25] INFO - Cargados 75 productos en árbol binario
+[2025-12-10 08:30:27] INFO - Usuario autenticado exitosamente: admin - Rol: ADMINISTRADOR
+[2025-12-10 08:30:27] INFO - Usuario autenticado exitosamente: admin - Rol: ADMINISTRADOR
+[2025-12-10 08:30:28] INFO - Generando reporte de valor total del inventario
+[2025-12-10 08:30:30] INFO - Interfaz gráfica creada correctamente
+[2025-12-10 08:30:59] INFO - Generando reporte de valor total del inventario
+[2025-12-10 08:31:29] INFO - Generando reporte de valor total del inventario
+[2025-12-10 08:31:59] INFO - Generando reporte de valor total del inventario
+[2025-12-10 08:32:29] INFO - Generando reporte de valor total del inventario
+[2025-12-10 08:32:59] INFO - Generando reporte de valor total del inventario
+[2025-12-10 08:33:29] INFO - Generando reporte de valor total del inventario
+[2025-12-10 08:33:59] INFO - Generando reporte de valor total del inventario
+[2025-12-10 08:34:29] INFO - Generando reporte de valor total del inventario
+[2025-12-10 08:34:59] INFO - Generando reporte de valor total del inventario
+[2025-12-10 08:35:29] INFO - Generando reporte de valor total del inventario
+[2025-12-10 08:35:59] INFO - Generando reporte de valor total del inventario
+[2025-12-10 08:36:29] INFO - Generando reporte de valor total del inventario
+[2025-12-10 08:36:59] INFO - Generando reporte de valor total del inventario
+[2025-12-10 08:37:29] INFO - Generando reporte de valor total del inventario
+[2025-12-10 08:37:59] INFO - Generando reporte de valor total del inventario
+[2025-12-10 08:38:29] INFO - Generando reporte de valor total del inventario
+[2025-12-10 08:38:59] INFO - Generando reporte de valor total del inventario
+[2025-12-10 08:39:29] INFO - Generando reporte de valor total del inventario
+[2025-12-10 08:39:59] INFO - Generando reporte de valor total del inventario
+[2025-12-10 08:40:29] INFO - Generando reporte de valor total del inventario
+[2025-12-10 08:40:59] INFO - Generando reporte de valor total del inventario
+[2025-12-10 08:41:29] INFO - Generando reporte de valor total del inventario
+[2025-12-10 08:41:59] INFO - Generando reporte de valor total del inventario
+[2025-12-10 08:42:23] INFO - Cerrando aplicación...
+[2025-12-10 08:42:23] INFO - Realizando tareas de limpieza...
+[2025-12-10 08:42:23] INFO - Logger cerrado
+[2025-12-10 09:03:54] INFO - Logger inicializado - Sistema FEMACO Inventario
+[2025-12-10 09:03:54] INFO - Look and Feel configurado correctamente
+[2025-12-10 09:03:54] INFO - Iniciando Sistema de Gestión de Inventario FEMACO v1.0
+[2025-12-10 09:03:54] INFO - Inicializando base de datos...
+[2025-12-10 09:03:54] INFO - Base de datos inicializada correctamente
+[2025-12-10 09:03:54] INFO - Creando interfaz gráfica principal...
+[2025-12-10 09:03:54] INFO - Cargados 75 productos en árbol binario
+[2025-12-10 09:03:59] INFO - Usuario autenticado exitosamente: admin - Rol: ADMINISTRADOR
+[2025-12-10 09:03:59] INFO - Usuario autenticado exitosamente: admin - Rol: ADMINISTRADOR
+[2025-12-10 09:04:00] INFO - Generando reporte de valor total del inventario
+[2025-12-10 09:04:01] INFO - Interfaz gráfica creada correctamente
+[2025-12-10 09:04:30] INFO - Generando reporte de valor total del inventario
+[2025-12-10 09:05:00] INFO - Generando reporte de valor total del inventario
+[2025-12-10 09:05:30] INFO - Generando reporte de valor total del inventario
+[2025-12-10 09:06:00] INFO - Generando reporte de valor total del inventario
+[2025-12-10 09:06:30] INFO - Generando reporte de valor total del inventario
+[2025-12-10 09:07:00] INFO - Generando reporte de valor total del inventario
+[2025-12-10 09:07:30] INFO - Generando reporte de valor total del inventario
+[2025-12-10 09:08:00] INFO - Generando reporte de valor total del inventario
+[2025-12-10 09:08:30] INFO - Generando reporte de valor total del inventario
+[2025-12-10 09:09:00] INFO - Generando reporte de valor total del inventario
+[2025-12-10 09:09:30] INFO - Generando reporte de valor total del inventario
+[2025-12-10 09:10:00] INFO - Generando reporte de valor total del inventario
+[2025-12-10 09:10:30] INFO - Generando reporte de valor total del inventario
+[2025-12-10 09:11:00] INFO - Generando reporte de valor total del inventario
+[2025-12-10 09:11:30] INFO - Generando reporte de valor total del inventario
+[2025-12-10 09:12:00] INFO - Generando reporte de valor total del inventario
+[2025-12-10 09:12:30] INFO - Generando reporte de valor total del inventario
+[2025-12-10 09:13:00] INFO - Generando reporte de valor total del inventario
+[2025-12-10 09:13:30] INFO - Generando reporte de valor total del inventario
+[2025-12-10 09:14:00] INFO - Generando reporte de valor total del inventario
+[2025-12-10 09:14:30] INFO - Generando reporte de valor total del inventario
+[2025-12-10 09:15:00] INFO - Generando reporte de valor total del inventario
+[2025-12-10 09:15:30] INFO - Generando reporte de valor total del inventario
+[2025-12-10 09:16:00] INFO - Generando reporte de valor total del inventario
+[2025-12-10 09:16:14] INFO - Cerrando aplicación...
+[2025-12-10 09:16:14] INFO - Realizando tareas de limpieza...
+[2025-12-10 09:16:14] INFO - Logger cerrado

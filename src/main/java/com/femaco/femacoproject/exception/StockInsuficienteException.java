@@ -1,17 +1,11 @@
 package com.femaco.femacoproject.exception;
 
-/**
- * Excepción lanzada cuando no hay suficiente stock para realizar una operación.
- * Se utiliza en salidas de inventario cuando la cantidad solicitada excede el stock disponible.
- */
 public class StockInsuficienteException extends InventarioException {
     private final String productoId;
     private final int stockActual;
     private final int stockSolicitado;
     
-    /**
-     * Constructor básico con información del producto y stock.
-     */
+    // Constructor básico con información del producto y stock.
     public StockInsuficienteException(String productoId, int stockActual, int stockSolicitado) {
         super(crearMensaje(productoId, stockActual, stockSolicitado),
               "STOCK_INSUFICIENTE", 
@@ -22,9 +16,7 @@ public class StockInsuficienteException extends InventarioException {
         this.stockSolicitado = stockSolicitado;
     }
     
-    /**
-     * Constructor con mensaje personalizado.
-     */
+    // Constructor con mensaje personalizado.
     public StockInsuficienteException(String mensaje) {
         super(mensaje, "STOCK_INSUFICIENTE", "GESTION_INVENTARIO", "REGISTRAR_SALIDA");
         this.productoId = "DESCONOCIDO";
@@ -32,9 +24,7 @@ public class StockInsuficienteException extends InventarioException {
         this.stockSolicitado = 0;
     }
     
-    /**
-     * Constructor con causa.
-     */
+    // Constructor con causa.
     public StockInsuficienteException(String mensaje, Throwable causa) {
         super(mensaje, "STOCK_INSUFICIENTE", "GESTION_INVENTARIO", "REGISTRAR_SALIDA", causa);
         this.productoId = "DESCONOCIDO";
@@ -64,16 +54,12 @@ public class StockInsuficienteException extends InventarioException {
         return stockSolicitado - stockActual;
     }
     
-    /**
-     * Indica si el stock actual es cero.
-     */
+    // Indica si el stock actual es cero.
     public boolean esStockCero() {
         return stockActual == 0;
     }
     
-    /**
-     * Obtiene el porcentaje de stock disponible respecto al solicitado.
-     */
+    // Obtiene el porcentaje de stock disponible respecto al solicitado.
     public double getPorcentajeDisponible() {
         if (stockSolicitado == 0) return 100.0;
         return (double) stockActual / stockSolicitado * 100;
